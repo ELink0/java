@@ -2,7 +2,7 @@ package controle;
 
 import javax.swing.JOptionPane;
 
-public class nomeSobrenome {
+public class NomeSobrenome {
 	public static void main(String[] args) {
 		String nome = JOptionPane.showInputDialog("Digite seu nome");
 		Integer quantidadeCaracteresNome = nome.length();

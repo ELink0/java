@@ -5,18 +5,20 @@ import javax.swing.JOptionPane;
 public class IdentificaVogaisOuConsoantes {
 	public static void main(String args[]) {
 		String letra = JOptionPane.showInputDialog("Digite uma letra");
+		String resultado = "";
 		if(letra.equals("a")) {
-			System.out.println("Vogal");
+			resultado = "Vogal";
 		} else if(letra.equals("e")) {
-			System.out.println("Vogal");
+			resultado = "Vogal";
 		} else if(letra.equals("i")) {
-			System.out.println("Vogal");
+			resultado = "Vogal";
 		} else if(letra.equals("o")) {
-			System.out.println("Vogal");
+			resultado = "Vogal";
 		} else if(letra.equals("u")) {
-			System.out.println("Vogal");
+			resultado = "Vogal";
 		} else {
-			System.out.println("Consoante");
+			resultado = "Consoante";
 		};
+		System.out.println(resultado);
 	}
 }

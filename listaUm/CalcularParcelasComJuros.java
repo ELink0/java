@@ -9,12 +9,10 @@ public class CalcularParcelasComJuros {
 		
 		double valor = Double.parseDouble(valorString);
 		Integer meses = Integer.parseInt(mesesString);
-		double parcelado = valor / meses;
-		for(int x=1; x<meses; x++) {
-			parcelado = parcelado * (1.05);
-			System.out.println("Valor com juros no  "+ x + "º mês"+"=" + (parcelado));
+		
+		for(int x=0; x<meses; x++) {
+			valor = valor * (1.05);
 		}
-		double total = valor + parcelado;
-		System.out.println("O valor total será: "+total);
+		System.out.println("O valor total é "+valor);
 	}
 }

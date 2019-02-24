@@ -6,7 +6,7 @@ public class Ordenador {
 	
 	public int inverterValores () {
         for ( int i =  arrayDeValores.length - 1 ; i >= 0 ; i-- ) {
-            saida = saida + arrayDeValores[i] +"\n";
+            saida = saida + arrayDeValores[i] +"\n"; // /n é opcional, apenas para separar por linha mesmo
             System.out.println ( saida );
 	}
         return inverterValores();

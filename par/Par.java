@@ -7,11 +7,9 @@ public class Par {
 		return numero;
 	}
 
-	public void setNumero(int novoValor) {
-		if(novoValor <= 10 || novoValor >= -10) {
-			numero = novoValor;
+	public void setNumero(int numero) {
+		this.numero = numero;
 		}
-	}
 	
 	public boolean verificar() {
 		if(numero % 2 == 0) {
@@ -20,4 +18,5 @@ public class Par {
 			return false;
 		}
 	}
+
 }

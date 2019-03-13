@@ -2,7 +2,7 @@ package exercicios;
 
 import java.security.InvalidParameterException;
 
-public class Ex1 {
+public class PrimeiroValorDoArray {
 	public static int primeiroElemento(int[] numeros) {
 		if (numeros != null && numeros.length > 0)
 			return numeros[0];

@@ -43,10 +43,16 @@ public class Conectar {
 			
 			
 			ResultSet rs = st.executeQuery("SELECT * FROM PESSOA");
+			
+			String resultado = "";
+			
 			while(rs.next()) {
-				resultado += "pedro";
+				resultado = resultado + rs.getString("pedro")+"\n";
 			}
+			JOptionPane.showMessageDialog(null, resultado);
 		}
+		
+
 		}catch(Exception e) {
 			e.printStackTrace();
 		}

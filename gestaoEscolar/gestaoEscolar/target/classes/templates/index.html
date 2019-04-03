@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmls:th="http://thymeleaf.org"
+	xmls:layout="http://www.ultraq.net/thymeleaf/layout">
+<head>
+<meta charset="UTF-8">
+<title>Analisar sala</title>
+</head>
+<body>
+	<h1>Analisar sala</h1>
+	<form method="post" action="analisar">
+		Nome: <input type="text" name="nome"/>
+		Curso: <input type="text" name="curso"/>
+		<button type="submit">Verificar</button>
+	</form>
+	</br>
+	</br>
+	<p>
+	Olá <span th:text="${nomeAluno}"></span>, sua sala será a: <span th:text="${resultado}"></span>
+	</p>
+</body>

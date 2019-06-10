@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmls:th="http://thymeleaf.org"
+xmls:layout="http://www.ultraq.net/thymeleaf/layout">
+<head>
+<meta charset="UTF-8">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"></link>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<title></title>
+</head>
+<body>
+	<table class="table">
+	  <thead class="thead-dark">
+	    <tr>
+	 		<th scope="col">Aluno: </th>
+			<th scope="col">matéria: </th>
+			<th scope="col">nota: </th>
+      <th scope="col">bimestre: </th>
+	    </tr>
+	  </thead>
+	  <tbody>
+		<tr th:each="aluno : ${aluno}">
+
+				<td th:text="${aluno.nome}"></td>
+				<td th:text="${aluno.materia"></td>
+				<td th:text="${aluno.nota}"></td>
+        <td th:text="${aluno.bimestre}"></td>
+
+				<td>
+					<div class="btn-group pull-right">
+						<a class="btn btn-sm btn-primary" th:href="@{/editarAluno/{id}(id=${aluno.id})}" >Editar</a>
+						<a class="delete btn btn-sm btn-danger" th:href="@{/removerAluno/{id}(id=${aluno.id})}">Excluir</a>
+					  </div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+
+		<div class="panel-footer">
+			<a class="btn btn-sm btn-success" th:href="@{/addAluno}" >Adicionar</a>
+		</div>
+	</div>
+</body>
+</html>
